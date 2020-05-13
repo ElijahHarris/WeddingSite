@@ -33,5 +33,13 @@ namespace SecWeddingSite.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+
+        public string SSL()
+        {
+            return "165FF696F21648417468934B974FDC35DDF8C9FED16BC6F1A5F50C6F5F29BD5F"
+                    + "\ncomodoca.com"
+                    + "\n5ebb5792b883d";
+        }
     }
 }

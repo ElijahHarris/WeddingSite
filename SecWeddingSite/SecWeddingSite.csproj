@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="wwwroot\.well-known\pki-valdation\5CF3D9661227931F853AD87F8A4E319C.txt" />
+    <Content Include="wwwroot\Public\.well-known\pki-valdation\5CF3D9661227931F853AD87F8A4E319C.txt" />
   </ItemGroup>
 
 

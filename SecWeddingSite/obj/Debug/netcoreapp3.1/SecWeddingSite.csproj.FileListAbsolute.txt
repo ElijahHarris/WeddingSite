@@ -32,3 +32,4 @@ C:\Users\Elijah Harris\source\repos\SecWeddingSite\SecWeddingSite\obj\Debug\netc
 C:\Users\Elijah Harris\source\repos\SecWeddingSite\SecWeddingSite\obj\Debug\netcoreapp3.1\SecWeddingSite.dll
 C:\Users\Elijah Harris\source\repos\SecWeddingSite\SecWeddingSite\obj\Debug\netcoreapp3.1\SecWeddingSite.pdb
 C:\Users\Elijah Harris\source\repos\SecWeddingSite\SecWeddingSite\obj\Debug\netcoreapp3.1\SecWeddingSite.csproj.CopyComplete
+C:\Users\Elijah Harris\source\repos\SecWeddingSite\SecWeddingSite\obj\Debug\netcoreapp3.1\SecWeddingSite.csprojAssemblyReference.cache

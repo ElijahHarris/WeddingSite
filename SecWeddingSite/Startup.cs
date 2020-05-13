@@ -24,6 +24,7 @@ namespace SecWeddingSite
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddMvc(option => option.EnableEndpointRouting = false);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,13 +46,22 @@ namespace SecWeddingSite
             app.UseRouting();
 
             app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
+            app.UseMvc(r =>
             {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-            });
+                r.MapRoute(
+                    name: "SSL",
+                    template: ".well-known/pki-validation/5CF3D9661227931F853AD87F8A4E319C.txt",
+                     defaults: new { controller = "Home", action = "SSL" });
+
+
+                //Route that given any input goes to index
+                r.MapRoute(
+                     name: "default",
+                     template: "{*url}",
+                     defaults: new { controller = "Home", action = "Index" });
+        });
+
+          
         }
     }
 }

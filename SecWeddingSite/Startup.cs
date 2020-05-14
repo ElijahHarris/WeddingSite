@@ -53,6 +53,11 @@ namespace SecWeddingSite
                     template: ".well-known/pki-validation/5CF3D9661227931F853AD87F8A4E319C.txt",
                      defaults: new { controller = "Home", action = "SSL" });
 
+                r.MapRoute(
+                   name: "Live",
+                   template: "Livestream",
+                    defaults: new { controller = "Home", action = "Livestream" });
+
 
                 //Route that given any input goes to index
                 r.MapRoute(
